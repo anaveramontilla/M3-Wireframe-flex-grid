@@ -1,0 +1,229 @@
+/* ---- ESCRITORIO ---- */
+
+/* CABECERA */
+
+/* contenedor negro que contiene otros dos contenedores*/
+
+.cab-container {
+    background-color: black;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* contenedor superior de la cabecera*/
+
+.arriba-container {
+    background-color: #434a5f;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 30px;
+}
+
+/* elementos del contenedor superior*/
+
+.arriba-container div {
+    background-color: #e96363;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* proporción de los elementos del contenedor superior*/
+
+.arriba-container div.elemento1 {
+    flex-grow: 1;
+}
+
+.arriba-container div.elemento2 {
+    flex-grow: 4;
+}
+
+.arriba-container div.elemento3 {
+    flex-grow: 1;
+}
+
+/* contenedor inferior de la cabecera*/
+
+.abajo-container {
+    background-color: #f18926;
+    display: flex;
+    margin: 10px 30px;
+}
+
+/* elementos del contenedor inferior*/
+
+.abajo-container div {
+    background-color: #dfd050;
+    padding: 10px;
+    margin: 20px;
+    flex-grow: 1;
+}
+
+/* CONTENIDO */
+
+/* contenedor negro que contiene otros dos contenedores*/
+
+.cont-container {
+    background-color: black;
+    height: 190px;
+    padding: 30px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* contenedor de la izquierda */
+
+.cont-izq {
+    background-color: #545c72;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    margin-right: 30px;
+    justify-content: center;
+}
+
+.cont-izq-arriba {
+    display: flex;
+}
+
+.cont-izq-centro {
+    display: flex;
+}
+
+.cont-izq-abajo {
+    display: flex;
+}
+
+/* elementos del contenedor de la izquierda */
+
+.cont-izq div.item {
+    background-color: #307ace;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 20px;
+}
+
+.cont-izq div.item2 {
+    background-color: #37c2ec;
+    flex-grow: 1;
+    padding: 10px;
+    margin: 20px;
+}
+
+/* contenedor de la derecha */
+
+.cont-dcha {
+    background-color: #eb4f4f;
+    padding: 15px;
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column wrap;
+}
+
+/* elementos del contenedor de la derecha */
+
+.cont-dcha div {
+    background-color: #dfd050;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* PIE */
+
+.pie-container {
+    background-color: black;
+    padding: 30px;
+    display: flex;
+}
+
+.pie-container div {
+    background-color: #e6b413;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+/* ---- TABLETA ---- */
+
+@media only screen and (max-width: 768px) {
+    
+    .cont-container {
+        background-color: #ffe600;
+        height: 310px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cont-izq {
+        background-color: #545c72;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .cont-dcha {
+        background-color: #eb4f4f;
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 20px;
+    }
+
+}
+
+/* ---- MÓVIL ---- */
+
+@media only screen and (max-width: 600px) {
+
+/* contenedor negro que contiene otros dos contenedores*/
+
+.cab-container {
+    background-color: black;
+    height: 320px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* contenedor superior de la cabecera*/
+
+.arriba-container {
+    background-color: #464d61;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px 30px;
+}
+
+/* CONTENIDO */ 
+.cont-container {
+    background-color: #ffe600;
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+}
+.cont-izq {
+    background-color: #444c61;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 0px;
+    justify-content: center;
+}
+
+.cont-izq-arriba {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-izq-centro {
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-izq-abajo {
+    display: flex;
+}
+
+}
