@@ -1,0 +1,323 @@
+/* ---- ESCRITORIO ---- */
+
+/* CABECERA */
+
+/* contenedor cabecera*/
+
+.cab-container {
+    background: url("../images/fondo-cabecera.jpg") no-repeat center;
+    height: 400px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+/* LOGO+NAV+REDES*/
+
+.arriba-container {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    align-self: end;
+    margin: 10px 30px;
+}
+
+/* elementos del contenedor superior*/
+
+.arriba-container div {
+    margin: 5px;
+}
+
+/* LOGO */
+
+.arriba-container div.logo img {
+    width: 80px;
+    margin-left: 20px;
+}
+
+.arriba-container div.logo img:hover {
+    opacity: 0.7;
+}
+
+/* NAVEGADOR */
+
+.arriba-container div.nav-bar a {
+    text-decoration: none;
+    color: #5f5f5f;
+    padding: 2px;
+}
+
+.arriba-container div.nav-bar p {
+    margin-right: 10px;
+}
+
+.arriba-container div.nav-bar a:hover {
+    color: #ee7159;
+    border-bottom: 2px solid #ee7159;
+}
+
+.arriba-container div.nav-bar li {
+    list-style: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 40px;
+}
+
+/* REDES */
+
+.arriba-container div.redes li {
+    list-style: none;
+}
+
+.arriba-container div.redes a {
+    color: #5f5f5f;
+    font-size: 20px;
+    margin: 15px;
+    text-decoration: none;
+}
+
+.arriba-container div.redes a:hover {
+    color: #ee7159;
+}
+
+/* contenedor inferior FRASE */
+
+.abajo-container {
+    background-color: rgba(173, 173, 173, 0.2);
+    display: grid;
+    grid-template-rows: 1fr;
+    margin: 10px 30px;
+}
+
+/* elementos del contenedor inferior*/
+
+.abajo-container div {
+    margin: 20px;
+}
+
+.abajo-container div h2 {
+    font-family: 'DM Serif Text', serif;
+    font-size: 40px;
+    text-align: center;
+    color: rgba(252, 71, 71, 0.4);
+}
+
+/* CONTENIDO */
+
+/* contenedor contenido*/
+
+.cont-container {
+    background-color: #dadada;
+    height: 800px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+/* contenedor izquierda */
+
+.cont-izq {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* contenedor derecha */
+.cont-dcha {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* contenedor cada artículo */
+.cont-article {
+    background-color: #eeeeee;
+    margin: 10px;
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cont-container p {
+    color: #5f5f5f;
+    margin-left: 30px;
+    margin-bottom: 0px;
+}
+
+.cont-container p.fecha {
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: -3px;
+}
+
+.cont-container h4 {
+    color: #eeeeee;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-size: 25px;
+    margin: 15px 0px 0px 30px;
+    margin-bottom: -7px;
+}
+
+.cont-article div.imagen1 {
+    background: url("../images/img1.jpg") no-repeat center/cover;
+    display: grid;
+    grid-template-rows: 5fr 1fr 0fr;
+    align-items: end;
+}
+.cont-article div.imagen2 {
+    background: url("../images/img2.jpg") no-repeat center/cover;
+    display: grid;
+    grid-template-rows: 5fr 1fr 0fr;
+    align-items: end;
+}
+.cont-article div.imagen3 {
+    background: url("../images/img3.jpg") no-repeat top/cover;
+    display: grid;
+    grid-template-rows: 5fr 1fr 0fr;
+    align-items: end;
+}
+.cont-article div.imagen4 {
+    background: url("../images/img4.jpg") no-repeat center/cover;
+    display: grid;
+    grid-template-rows: 5fr 1fr 0fr;
+    align-items: end;
+}
+
+.cont-article div.pie-imagen {
+    background-color: #ee7159;
+}
+
+.cont-container div.leerMas {
+    margin: 20px 30px;
+}
+.cont-container a {
+    color: #999999;
+    text-decoration: none;
+}
+
+.cont-container a:hover {
+    color: #444c61;
+}
+
+/* PIE */
+
+.pie-container {
+    background-color: #dadada;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #5f5f5f;
+    padding: 10px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/* ajuste de algunos saltos*/
+@media only screen and (max-width: 1340px) {
+    .cont-container {
+        height: 980px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .cont-container {
+        height: 1150px;
+    }
+}
+/* ---- TABLETA ---- */
+
+@media only screen and (max-width: 890px) {
+    .cab-container {
+        height: 400px;
+        display: grid;
+        grid-template-rows: 1fr 0fr;
+    }
+
+    .arriba-container {
+        align-self: start;
+    }
+    .arriba-container div {
+        margin: 10px;
+    }
+    /* contenedor inferior FRASE */
+    .abajo-container {
+        background-color: rgba(173, 173, 173, 0.2);
+        margin: 20px 30px;
+    }
+    /* elementos del contenedor inferior*/
+    .abajo-container div {
+        margin: 10px;
+    }
+    .abajo-container div h2 {
+        font-family: 'DM Serif Text', serif;
+        font-size: 30px;
+        text-align: center;
+        color: rgba(252, 71, 71, 0.4);
+    }
+    
+    .cont-container {
+        height: 2000px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* ---- MÓVIL ---- */
+
+@media only screen and (max-width: 650px) {
+    /* contenedor cabecera */
+    .cab-container {
+        background: url("../images/fondo-cabecera.jpg") no-repeat top;
+        height: 1200px;
+    }
+    /* contenedor superior de la cabecera*/
+    .arriba-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 10px 30px;
+    }
+    .arriba-container div.logo img {
+        width: 100px;
+        margin-left: 0px;
+    }
+    .arriba-container div.nav-bar {
+        font-size: 20px;
+        margin: 0px;
+        text-align: center;
+    }
+    .arriba-container div.nav-bar li {
+        display: block;
+        font-size: 30px;
+    }
+    .arriba-container div.redes {
+        margin-top: 80px;
+    }
+    .arriba-container div.redes li {
+        display: inline-block;
+    }
+    .arriba-container div.redes a {
+        font-size: 50px;
+    }
+    .arriba-container div.redes ul {
+        margin-left: -35px;
+    }
+    .abajo-container div h2 {
+        font-size: 40px;
+    }
+    /* CONTENIDO */
+    .cont-container {
+        height: 1900px;
+    }
+    
+    .cont-article {
+        height: 450px;
+    }
+        
+    /* PIE */
+    .pie-container p {
+        text-align: center;
+    }
+}
